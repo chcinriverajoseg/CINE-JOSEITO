@@ -22,6 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 
 
 # Dependencies
@@ -42,3 +43,5 @@ dist/
 # OS
 .DS_Store
 Thumbs.db
+=======
+>>>>>>> 20bc9f11e13453c9cca995fc40d9c8914477a18e

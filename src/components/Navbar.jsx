@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Film, Tv, SatelliteDish, Search, Heart, User, LogOut, Clapperboard, Menu, X, Home } from "lucide-react";
@@ -53,10 +54,30 @@ export const BottomNav = () => {
           </Link>
         );
       })}
+=======
+import React from "react";
+import { Link } from "react-router-dom";
+import { Film, Tv, SatelliteDish } from "lucide-react";
+
+const Navbar = () => {
+  return (
+    <nav className="flex justify-center gap-8 text-blue-600 mb-6 bg-gray-200 p-4">
+
+      <Link to="/" className="flex items-center gap-2 hover:underline">
+        <Film size={20} /> Películas
+      </Link>
+      <Link to="/series" className="flex items-center gap-2 hover:underline">
+        <Tv size={20} /> Series
+      </Link>
+      <Link to="/canales" className="flex items-center gap-2 hover:underline">
+        <SatelliteDish size={20} /> Canales IPTV
+      </Link>
+>>>>>>> 20bc9f11e13453c9cca995fc40d9c8914477a18e
     </nav>
   );
 };
 
+<<<<<<< HEAD
 // ── Navbar principal ────────────────────────────────────────────────
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -270,3 +291,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+=======
+export default Navbar;
+
+>>>>>>> 20bc9f11e13453c9cca995fc40d9c8914477a18e
