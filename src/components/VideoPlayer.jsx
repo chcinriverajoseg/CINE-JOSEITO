@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect, useRef } from "react";
 import Hls from "hls.js";
 import { motion } from "framer-motion";
@@ -21,16 +20,10 @@ const VideoPlayer = ({ titulo, url }) => {
     }
   }, [url]);
 
-=======
-import { motion } from "framer-motion";
-
-const VideoPlayer = ({ titulo, url }) => {
->>>>>>> 20bc9f11e13453c9cca995fc40d9c8914477a18e
   if (!url) return null;
 
   return (
     <motion.div
-<<<<<<< HEAD
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
@@ -50,19 +43,6 @@ const VideoPlayer = ({ titulo, url }) => {
           border: "1px solid rgba(255,255,255,0.08)",
           background: "#000", aspectRatio: "16/9",
         }}
-=======
-      className="mt-6"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <h2 className="text-xl font-bold mb-2">🎬 Reproduciendo: {titulo}</h2>
-      <video
-        className="w-full rounded-2xl border border-gray-700 shadow-lg"
-        controls
-        autoPlay
-        src={url}
->>>>>>> 20bc9f11e13453c9cca995fc40d9c8914477a18e
       >
         Tu navegador no soporta la reproducción de video.
       </video>

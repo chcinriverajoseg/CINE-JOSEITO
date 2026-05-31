@@ -10,4 +10,4 @@ const canalSchema = new mongoose.Schema({
   url:               { type: String, default: '' },
 }, { timestamps: true });
 
-export default mongoose.model('Canal', canalSchema);
+export default mongoose.models.Canal || mongoose.model('Canal', canalSchema);

@@ -26,4 +26,4 @@ const serieSchema = new mongoose.Schema({
   temporadas:  [temporadaSchema],
 }, { timestamps: true });
 
-export default mongoose.model('Serie', serieSchema);
+export default mongoose.models.Serie || mongoose.model('Serie', serieSchema);

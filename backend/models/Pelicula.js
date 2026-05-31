@@ -1,15 +1,14 @@
 import mongoose from 'mongoose';
 
 const peliculaSchema = new mongoose.Schema({
-  title:       { type: String, required: true },
-  desc:        { type: String, default: '' },
-  emoji:       { type: String, default: '🎬' },
-  year:        { type: Number, default: 2024 },
-  genre:       { type: String, default: 'Sin género' },
-  rating:      { type: Number, default: 0 },
-  nuevo:       { type: Boolean, default: false },
-  url:         { type: String, required: true },
-  posterUrl:   { type: String, default: '' },
+  name:              { type: String, required: true },
+  categoria:         { type: String, required: true },
+  emoji:             { type: String, default: '🎬' },
+  live:              { type: Boolean, default: false },
+  youtubeChannelId:  { type: String, default: '' },
+  youtubeVideoId:    { type: String, default: '' },
+  url:               { type: String, default: '' },
 }, { timestamps: true });
 
-export default mongoose.model('Pelicula', peliculaSchema);
+export default mongoose.models.Pelicula || mongoose.model('Pelicula', peliculaSchema);
+

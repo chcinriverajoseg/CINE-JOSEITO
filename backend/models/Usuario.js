@@ -31,4 +31,4 @@ usuarioSchema.methods.compararPassword = function (plain) {
   return bcrypt.compare(plain, this.password);
 };
 
-export default mongoose.model('Usuario', usuarioSchema);
+export default mongoose.models.Usuario || mongoose.model('Usuario', usuarioSchema);;
