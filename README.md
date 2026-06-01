@@ -1,12 +1,46 @@
-# React + Vite
+# 🎬 CINE-JOSEITO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+App fullstack de streaming tipo Netflix construida con React, Node.js, Express y MongoDB.
 
-Currently, two official plugins are available:
+🔗 **[Ver Demo en vivo](https://cine-joseito.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔐 Registro e inicio de sesión con JWT
+- 🎥 Reproductor de video integrado
+- 🗂️ Catálogo de películas y series
+- 📱 Diseño responsive
+- 🔒 Rutas protegidas por autenticación
+
+---
+
+## 🧪 Credenciales de prueba
+Email:    demo@test.com
+Password: 123456
+
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:** React · React Router · CSS Modules  
+**Backend:** Node.js · Express · MongoDB · JWT · bcrypt
+
+---
+
+## ⚙️ Instalación local
+
+```bash
+git clone https://github.com/chcinriverajoseg/CINE-JOSEITO.git
+cd backend && npm install
+cd ../frontend && npm install
+npm run dev
+```
+
+---
+
+## 👨‍💻 Autor
+
+**Jose Gregorio Chacin** — [@chcinriverajoseg](https://github.com/chcinriverajoseg)
